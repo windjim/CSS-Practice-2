@@ -1,0 +1,45 @@
+.lh-23 {
+  line-height: 23px;
+}
+.lh-37 {
+  line-height: 37px;
+}
+.lh-21 {
+  line-height: 21px;
+}
+.nav-logo {
+  width: 53px;
+  height: 53px;
+  @include pad {
+    width: 40px;
+    height: 40px;
+  }
+}
+// header左邊
+.nav-left-width {
+  width: 617px;
+  @include mobile {
+    width: 271px;
+  }
+}
+.nav-search-width {
+  width: 335px;
+  .icofont-search-1 {
+    font-size: 19px;
+  }
+  @include mobile {
+    width: 207px;
+    input {
+      width: 166px;
+    }
+    .icofont-search-1 {
+      font-size: 15px;
+    }
+  }
+}
+// header右邊
+@include pad {
+  .nav-md-btn {
+    width: 22px;
+  }
+}

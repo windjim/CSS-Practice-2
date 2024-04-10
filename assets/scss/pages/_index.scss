@@ -1,0 +1,72 @@
+.lh34 {
+  line-height: 1.437em;
+}
+// 第一部分
+.section-one {
+  &-bg {
+    background: url("https://s3-alpha-sig.figma.com/img/5289/d9c4/63ad863a1ce0bff54649340224bf6990?Expires=1713744000&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=K0nzt6-vVOF2T~2mQ53izDvGjSIOn8u15EMZ8WNIUvT9LYhRaGRxLiQ9a~LlvIifDhXwhD3WYipJ-OhWTkahKeQDJZlifshihFbWg~uFXM4mgsIhPiizdbTaYBkgyIMjnUOiIxTeTZky8xDz~rUTl-usgRkFChewePjBcyGZJ3cQdLL~pheAao77FkHJT9Hdm0pxs4iIXWigO1akCo0F1MfPvBe59K5aTZDnBDlAwG~TpkfJpQd6lmG3Z3JS-FZJEouusN4E1~rDzKcV2D4aQBlQKiN3gXLmaurxqHJm7GMCFXZMkSQbApm7BnyUBeoVCDlbD3P42iT9~--wlphpgg__")
+      center no-repeat;
+    background-size: cover;
+    h2 {
+      line-height: 1.15em;
+      font-size: 3.75rem;
+    }
+    @include pad {
+      h2 {
+        width: 153px;
+        font-size: 2rem;
+      }
+    }
+    @include mobile {
+      h2 {
+        width: 153px;
+      }
+    }
+  }
+  &-title {
+    font-size: 1.5rem;
+    @include pad {
+      font-size: 1.125rem;
+    }
+  }
+}
+// 第二部分
+.section-two {
+  img {
+    width: 80px;
+    height: 80px;
+  }
+  p {
+    font-size: 1.5rem;
+    line-height: 1.437em;
+  }
+  &-more {
+    p {
+      font-size: 3rem;
+      line-height: 1.25em;
+    }
+  }
+
+  @include mobile {
+    img {
+      width: 40px;
+      height: 40px;
+    }
+    p {
+      font-size: 1rem;
+      line-height: 1.5em;
+    }
+    &-more {
+      p {
+        font-size: 1.5rem;
+        line-height: 1.333em;
+      }
+    }
+  }
+}
+// 第三部分
+.section-three {
+  h2 {
+    line-height: 1.155em;
+  }
+}
