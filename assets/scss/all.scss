@@ -31,6 +31,8 @@
 //utils 通用設定
 @import "./utils/mixin";
 
+// 元件通用設定
+@import "./components/hover.scss";
 //layout css區
 @import "./layout/header.scss";
 @import "./layout/footer.scss";
