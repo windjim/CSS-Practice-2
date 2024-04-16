@@ -1,0 +1,13 @@
+.swiper-wrapper {
+  // 使用 transition-timing-function: linear;
+  // 能創造出跑馬燈均速的效果
+  transition-timing-function: linear;
+}
+.swiper-slide {
+  letter-spacing: 0.1em;
+  width: auto;
+  white-space: nowrap;
+}
+.lh34 {
+  line-height: 1.437em;
+}

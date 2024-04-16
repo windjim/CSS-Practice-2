@@ -1,5 +1,5 @@
 // import字型區
-@import url("https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@200;300;400;500;600;700;900&family=Yeseva+One&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100..900&family=Noto+Serif+TC:wght@200;300;400;500;600;700;900&family=Yeseva+One&display=swap");
 
 //載入icon
 @import url("https://fonts.googleapis.com/icon?family=Material+Icons");
@@ -19,7 +19,6 @@
 
 //客製化utilites
 @import "./utils/utilities";
-//客製化元件components
 
 //bootstrap5全部內容
 @import "bootstrap";
@@ -31,11 +30,12 @@
 //utils 通用設定
 @import "./utils/mixin";
 
-// 元件通用設定
+//客製化元件components
 @import "./components/hover.scss";
+@import "./components/marquee.scss";
+
 //layout css區
 @import "./layout/header.scss";
-@import "./layout/footer.scss";
 
 //pages css區
 @import "./pages/index.scss";

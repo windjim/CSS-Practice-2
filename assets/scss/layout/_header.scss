@@ -15,6 +15,12 @@
     height: 40px;
   }
 }
+.hover-member {
+  transition: color 0.2s;
+  &:hover {
+    color: #9c9e18;
+  }
+}
 // header左邊
 .nav-left-width {
   width: 617px;

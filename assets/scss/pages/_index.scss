@@ -1,32 +1,27 @@
 .lh34 {
   line-height: 1.437em;
 }
+.lh69 {
+  line-height: 1.15em;
+}
+.text-justify {
+  text-align: justify;
+}
 // 第一部分
 .section-one {
-  &-bg {
-    background: url("https://s3-alpha-sig.figma.com/img/5289/d9c4/63ad863a1ce0bff54649340224bf6990?Expires=1713744000&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=K0nzt6-vVOF2T~2mQ53izDvGjSIOn8u15EMZ8WNIUvT9LYhRaGRxLiQ9a~LlvIifDhXwhD3WYipJ-OhWTkahKeQDJZlifshihFbWg~uFXM4mgsIhPiizdbTaYBkgyIMjnUOiIxTeTZky8xDz~rUTl-usgRkFChewePjBcyGZJ3cQdLL~pheAao77FkHJT9Hdm0pxs4iIXWigO1akCo0F1MfPvBe59K5aTZDnBDlAwG~TpkfJpQd6lmG3Z3JS-FZJEouusN4E1~rDzKcV2D4aQBlQKiN3gXLmaurxqHJm7GMCFXZMkSQbApm7BnyUBeoVCDlbD3P42iT9~--wlphpgg__")
-      center no-repeat;
-    background-size: cover;
-    h2 {
-      line-height: 1.15em;
-      font-size: 3.75rem;
-    }
-    @include pad {
-      h2 {
-        width: 153px;
-        font-size: 2rem;
-      }
-    }
-    @include mobile {
-      h2 {
-        width: 153px;
-      }
+  .headerSwiper {
+    height: 518px;
+  }
+  .h-swiper-btn {
+    color: #d3d3d3;
+    transition: color 0.3s;
+    &:hover {
+      color: #808080;
     }
   }
-  &-title {
-    font-size: 1.5rem;
-    @include pad {
-      font-size: 1.125rem;
+  @include pad {
+    .mySwiper {
+      height: 350px;
     }
   }
 }
@@ -37,6 +32,8 @@
     height: 80px;
   }
   p {
+    font-family: "Noto Serif TC", serif;
+    font-weight: 700;
     font-size: 1.5rem;
     line-height: 1.437em;
   }
@@ -81,8 +78,12 @@
         height: 255px;
       }
       h5 {
-        font-size: 1.5rem;
         line-height: 1.437em;
+      }
+      @include pad {
+        img {
+          height: 210px;
+        }
       }
     }
     &-footer {
@@ -93,6 +94,71 @@
       p {
         line-height: 1.4375em;
       }
+      @include pad {
+        img {
+          width: 20px;
+          height: 20px;
+        }
+      }
     }
+  }
+}
+// 第四部分
+.section-four {
+  h2 {
+    line-height: 1.155em;
+  }
+  &-content {
+    img {
+      height: 321px;
+      object-position: center 32.5%;
+    }
+  }
+  &-label {
+    span {
+      width: 4px;
+    }
+  }
+  &-description {
+    line-height: 1.437em;
+  }
+  &-btn {
+    line-height: 1.45em;
+  }
+  @include pad {
+    &-content {
+      img {
+        height: 158px;
+      }
+    }
+    &-description {
+      line-height: 1.5em;
+    }
+  }
+}
+// 第五部分
+.section-five {
+  &-list {
+    img {
+      height: 274px;
+    }
+    h2 {
+      transform: translate(-50%, -50%) rotate(-4deg);
+    }
+  }
+  .deg2 {
+    transform: rotate(2deg);
+  }
+  .deg-2 {
+    transform: rotate(-2deg);
+  }
+}
+// 第六部分
+.section-six {
+  .form-floating > .form-control:focus ~ label::after {
+    background-color: $light;
+  }
+  label {
+    color: #4f4f4f;
   }
 }

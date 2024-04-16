@@ -1,2 +1,22 @@
+// 首頁第二部分活動分類變色
+.h-activity-type {
+  &:hover {
+    background: $secondary;
+    transition: background 0.3s ease-out;
+    p {
+      color: #c4cfde;
+      transition: color 0.3s ease-out;
+    }
+    img {
+      filter: invert(90%) hue-rotate(220deg) saturate(40%) brightness(84%)
+        grayscale(100%);
+      transition: filter 0.3s ease-out;
+    }
+  }
+}
+// 首頁第四五部分: 查看活動詳情和確認訂閱
 .h-link-yellow {
+  &:hover {
+    color: $secondary;
+  }
 }
