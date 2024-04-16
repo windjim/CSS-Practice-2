@@ -5,8 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>about</title>
-    <script type="module" crossorigin src="/CSS-Practice-2/assets/bootstrap.min-bffe8f19.js"></script>
-    <link rel="stylesheet" href="/CSS-Practice-2/assets/bootstrap-dfe80c09.css">
+    <script type="module" crossorigin src="/CSS-Practice-2/assets/bootstrap.min-f65f367d.js"></script>
+    <link rel="stylesheet" href="/CSS-Practice-2/assets/bootstrap-8b5aecb4.css">
   </head>
   <body>
     <!-- header -->
@@ -23,7 +23,7 @@
           />
           <div class="d-none d-lg-flex align-items-lg-center gap-lg-1">
             <span class="display-4 yeseva-one-regular lh-37">7TAO</span>
-            <span class="nototc-serif-bold lh-23">活動訂票網</span>
+            <span class="noto-sans-serif fw-bold lh-23">活動訂票網</span>
           </div>
         </div>
         <div
@@ -44,15 +44,17 @@
       </div>
       <!-- header右邊(PC版本) -->
       <ul class="d-none d-lg-flex align-items-lg-center gap-lg-6 m-0">
-        <li class="list-group-item bg-light border-0">
+        <li class="list-group-item bg-light border-0 hover-member">
           <a href="#" class="d-flex justify-content-center">
             <i class="icofont-ui-file"></i>
             <p class="yeseva-one-regular lh-21 mb-0">REGISTER</p>
           </a>
         </li>
-        <li class="d-flex list-group-item bg-light border-0">
-          <i class="icofont-ui-user"></i>
-          <p class="yeseva-one-regular lh-21 mb-0">LOGIN</p>
+        <li class="d-flex list-group-item bg-light border-0 hover-member">
+          <a href="#" class="d-flex justify-content-center">
+            <i class="icofont-ui-user"></i>
+            <p class="yeseva-one-regular lh-21 mb-0">LOGIN</p>
+          </a>
         </li>
       </ul>
       <!-- header右邊(手機、Pad版本) -->
@@ -76,7 +78,7 @@
         </button>
         <!-- offcanva裡面 -->
         <div
-          class="offcanvas offcanvas-end bg-light"
+          class="offcanvas offcanvas-end bg-light w-75"
           tabindex="-1"
           id="offcanvasRight"
           aria-labelledby="offcanvasRightLabel"
@@ -91,14 +93,14 @@
           </div>
           <div class="offcanvas-body">
             <h3
-              class="py-5 offcanvas-title text-center nototc-serif-bold"
+              class="py-5 offcanvas-title text-center noto-sans-serif fw-bold"
               id="offcanvasRightLabel"
             >
               會員註冊專區
             </h3>
             <ul class="d-flex flex-column justify-content-center gap-1 m-0 p-0">
               <li
-                class="p-8 list-group-item display-3 bg-light border-top border-bottom border-2"
+                class="p-8 list-group-item display-3 bg-light border-top border-bottom border-2 hover-member"
               >
                 <a href="#" class="d-flex justify-content-center">
                   <i class="icofont-ui-file"></i>
@@ -106,7 +108,7 @@
                 </a>
               </li>
               <li
-                class="p-8 list-group-item display-3 bg-light border-top border-bottom border-2"
+                class="p-8 list-group-item display-3 bg-light border-top border-bottom border-2 hover-member"
               >
                 <a href="#" class="d-flex justify-content-center">
                   <i class="icofont-ui-user"></i>
@@ -121,7 +123,12 @@
   </div>
 </div>
     <h1>我是about</h1>
-    <footer class="footer">我是 footer</footer>
+    <footer class="py-md-8 py-6 text-center border-top border-2 border-primary">
+  <p class="m-0 noto-sans-serif fs-md-7 fs-8 lh34 text-black">
+    © 7TAO七逃. All Rights Reserved
+  </p>
+</footer>
+
     
   </body>
 </html>
