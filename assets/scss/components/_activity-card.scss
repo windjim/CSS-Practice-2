@@ -1,0 +1,35 @@
+.card {
+  &-header {
+    h3 {
+      line-height: 1.155em;
+    }
+  }
+  &-body {
+    img {
+      height: 255px;
+    }
+    h5 {
+      line-height: 1.437em;
+    }
+    @include pad {
+      img {
+        height: 210px;
+      }
+    }
+  }
+  &-footer {
+    img {
+      width: 24px;
+      height: 24px;
+    }
+    p {
+      line-height: 1.4375em;
+    }
+    @include pad {
+      img {
+        width: 20px;
+        height: 20px;
+      }
+    }
+  }
+}

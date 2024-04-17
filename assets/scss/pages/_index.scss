@@ -20,7 +20,7 @@
     }
   }
   @include pad {
-    .mySwiper {
+    .headerSwiper {
       height: 350px;
     }
   }
@@ -66,42 +66,6 @@
   h2 {
     line-height: 1.155em;
   }
-  .card {
-    &-header {
-      h3 {
-        line-height: 1.155em;
-      }
-    }
-    &-body {
-      img {
-        width: 416px;
-        height: 255px;
-      }
-      h5 {
-        line-height: 1.437em;
-      }
-      @include pad {
-        img {
-          height: 210px;
-        }
-      }
-    }
-    &-footer {
-      img {
-        width: 24px;
-        height: 24px;
-      }
-      p {
-        line-height: 1.4375em;
-      }
-      @include pad {
-        img {
-          width: 20px;
-          height: 20px;
-        }
-      }
-    }
-  }
 }
 // 第四部分
 .section-four {
@@ -114,11 +78,7 @@
       object-position: center 32.5%;
     }
   }
-  &-label {
-    span {
-      width: 4px;
-    }
-  }
+
   &-description {
     line-height: 1.437em;
   }

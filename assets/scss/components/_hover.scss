@@ -14,6 +14,44 @@
     }
   }
 }
+// 線上活動區塊分類標籤
+.activity-label {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  border: 1px solid #000;
+  transition: background ease-out 0.3s;
+  span {
+    width: 4px;
+    background: $primary;
+    transition: background ease-out 0.3s;
+  }
+  p {
+    margin: 0px;
+    padding: 4px 24px 4px 0;
+    font-family: "Noto Sans TC", sans-serif;
+    font-weight: bold;
+    font-size: $h7-font-size;
+    line-height: 1.437em;
+    transition: color ease-out 0.3s;
+  }
+  @include pad {
+    gap: 12px;
+    p {
+      padding: 4px 16px 4px 0;
+      font-size: $h8-font-size;
+    }
+  }
+  &:hover {
+    background: #000;
+    span {
+      background: $secondary;
+    }
+    p {
+      color: #fff;
+    }
+  }
+}
 // 首頁第四五部分: 查看活動詳情和確認訂閱
 .h-link-yellow {
   &:hover {

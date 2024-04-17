@@ -1,0 +1,19 @@
+.wh-18 {
+  width: 18px;
+  height: 18px;
+  font-size: 18px;
+}
+.wh-42 {
+  width: 42px;
+  height: 42px;
+}
+.h-page {
+  background: $light;
+  transition: background 0.3s;
+  &:hover {
+    background: $primary;
+    span {
+      color: $secondary;
+    }
+  }
+}
