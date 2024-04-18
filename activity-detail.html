@@ -4,9 +4,9 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>about</title>
-    <script type="module" crossorigin src="/CSS-Practice-2/assets/bootstrap.min-a72cc793.js"></script>
-    <link rel="stylesheet" href="/CSS-Practice-2/assets/bootstrap-422a7ac0.css">
+    <title>活動詳細頁</title>
+    <script type="module" crossorigin src="/CSS-Practice-2/assets/bootstrap.min-4f408aa8.js"></script>
+    <link rel="stylesheet" href="/CSS-Practice-2/assets/bootstrap-4c2d338d.css">
   </head>
   <body>
     <!-- header -->
@@ -41,7 +41,9 @@
         </div>
       </div>
       <!-- header右邊(PC版本) -->
-      <ul class="d-none d-lg-flex align-items-lg-center gap-lg-6 m-0">
+      <ul
+        class="d-none d-lg-flex justify-content-between align-items-lg-center gap-lg-6 m-0 list-unstyled nav-right-list"
+      >
         <li class="list-group-item bg-light border-0 hover-member">
           <a href="#" class="d-flex justify-content-center">
             <i class="icofont-ui-file"></i>
@@ -120,7 +122,56 @@
     </nav>
   </div>
 </div>
-    <h1>我是about</h1>
+    <header class="container">
+      <article class="pt-md-8 pt-4 pb-6">
+        <section class="row row-cols-12 gap-lg-0 gap-2 activity-detail-header">
+          <div class="col-lg-10">
+            <img
+              src="/CSS-Practice-2/assets/activity09-78501748.jpg"
+              alt="當前點選活動圖片"
+              class="object-fit-cover p-lg-6 p-3 border border-3 border-primary w-100"
+            />
+          </div>
+
+          <div class="col-lg-2 d-flex flex-lg-column gap-lg-6">
+            <div
+              class="col-4 py-md-8 py-6 px-md-10 px-4 border border-3 border-primary"
+            >
+              <h2
+                class="m-0 yeseva-one-regular fs-md-1 fs-4 lh-115em text-center"
+              >
+                2023
+              </h2>
+            </div>
+
+            <div
+              class="col-8 py-md-12 py-3 px-md-11 border border-3 border-primary d-flex justify-content-center"
+            >
+              <div
+                class="d-flex flex-lg-column justify-content-between align-items-center activity-detail-header-date"
+              >
+                <h2
+                  class="m-0 yeseva-one-regular fs-md-1 fs-12 lh-115em text-center"
+                >
+                  MAY <br />
+                  19
+                </h2>
+                <div
+                  class="activity-detail-header-line border border-2 border-primary"
+                ></div>
+
+                <p
+                  class="mb-0 yeseva-one-regular fs-md-2 fs-7 lh-115em text-center"
+                >
+                  12:00 <br />
+                  | <br />20:00
+                </p>
+              </div>
+            </div>
+          </div>
+        </section>
+      </article>
+    </header>
     <footer class="py-md-8 py-6 text-center border-top border-2 border-primary">
   <p class="m-0 noto-sans-serif fs-md-7 fs-8 lh34 text-black">
     © 7TAO七逃. All Rights Reserved
