@@ -44,6 +44,9 @@
   }
 }
 // header右邊
+.nav-right-list {
+  width: 215px;
+}
 @include pad {
   .nav-md-btn {
     width: 22px;

@@ -2,7 +2,7 @@
 *::before,
 *::after {
   box-sizing: border-box;
-  // outline: 1px solid orange;
+  outline: 1px solid orange;
 }
 html {
   scroll-behavior: smooth;
@@ -18,4 +18,7 @@ img {
 }
 a {
   color: inherit;
+}
+.test {
+  outline: 1px solid red;
 }

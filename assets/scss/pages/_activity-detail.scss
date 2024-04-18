@@ -1,0 +1,29 @@
+.lh-115em {
+  line-height: 1.15em;
+}
+.activity-detail {
+  &-header {
+    img {
+      height: 612px;
+    }
+    &-date {
+      height: 359px;
+    }
+    &-line {
+      width: 100px;
+      transform: rotate(120deg);
+    }
+    @include pad {
+      img {
+        height: 204px;
+      }
+      &-date {
+        width: 181px;
+        height: auto;
+      }
+      &-line {
+        width: 50px;
+      }
+    }
+  }
+}

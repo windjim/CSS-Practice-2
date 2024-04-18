@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>活動詳細頁</title>
+  </head>
+  <body>
+    <%- include('./layout/header'); -%>
+    <header class="container">
+      <article class="pt-md-8 pt-4 pb-6">
+        <section class="row row-cols-12 gap-lg-0 gap-2 activity-detail-header">
+          <div class="col-lg-10">
+            <img
+              src="../assets/images/activity09.jpg"
+              alt="當前點選活動圖片"
+              class="object-fit-cover p-lg-6 p-3 border border-3 border-primary w-100"
+            />
+          </div>
+
+          <div class="col-lg-2 d-flex flex-lg-column gap-lg-6">
+            <div></div>
+            <div
+              class="col-4 py-md-8 py-6 px-md-10 px-4 border border-3 border-primary"
+            >
+              <h2
+                class="m-0 yeseva-one-regular fs-md-1 fs-4 lh-115em text-center"
+              >
+                2023
+              </h2>
+            </div>
+
+            <div
+              class="col-8 py-md-12 py-3 px-md-11 border border-3 border-primary d-flex justify-content-center"
+            >
+              <div
+                class="d-flex flex-lg-column justify-content-between align-items-center activity-detail-header-date"
+              >
+                <h2
+                  class="m-0 yeseva-one-regular fs-md-1 fs-12 lh-115em text-center"
+                >
+                  MAY <br />
+                  19
+                </h2>
+                <div
+                  class="activity-detail-header-line border border-2 border-primary"
+                ></div>
+
+                <p
+                  class="mb-0 yeseva-one-regular fs-md-2 fs-7 lh-115em text-center"
+                >
+                  12:00 <br />
+                  | <br />20:00
+                </p>
+              </div>
+            </div>
+          </div>
+        </section>
+      </article>
+    </header>
+    <%- include('./layout/footer'); -%>
+
+    <script type="module" src="../main.js"></script>
+  </body>
+</html>
