@@ -4,14 +4,41 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>活動詳細頁</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <title>7TAO｜活動訂票網</title>
+    <!-- FAVICON -->
+    <link rel="shortcut icon" href="../assets/images/logo.png" />
+    <!-- Open Graph Protocol-->
+    <meta property="og:title" content="7TAO｜活動訂票網" />
+    <meta property="og:type" content="website" />
+    <meta
+      property="og:url"
+      content="https://windjim.github.io/CSS-Practice-2/"
+    />
+    <meta
+      property="og:image"
+      content="https://raw.githubusercontent.com/windjim/CSS-Practice-2/main/assets/images/logo.png"
+    />
+    <meta property="og:image:type" content="image/png" />
+    <meta property="og:image:width" content="300" />
+    <meta property="og:image:height" content="300" />
+    <meta property="og:image:alt" content="7TAO｜活動訂票網 logo" />
+    <meta
+      property="og:description"
+      content="7TAO是您尋找旅遊活動訂票的首選。我們提供方便快捷的訂票服務，讓您輕鬆計劃行程，探索精彩活動。"
+    />
+    <!-- 蘋果裝置圖示 -->
+    <link href="../assets/images/logo.png" rel="apple-touch-icon" />
   </head>
   <body>
     <%- include('./layout/header'); -%>
-    <header class="container">
+    <header class="container mb-6">
       <article class="pt-md-8 pt-4 pb-6">
         <section class="row row-cols-12 gap-lg-0 gap-2 activity-detail-header">
-          <div class="col-lg-10 col-12">
+          <div class="col-lg-10">
             <img
               src="../assets/images/activity09.jpg"
               alt="當前點選活動圖片"
@@ -19,9 +46,9 @@
             />
           </div>
 
-          <div class="col-lg-2 col-12 d-flex flex-lg-column gap-lg-6">
+          <div class="col-lg-2 d-flex flex-lg-column gap-lg-6 gap-2">
             <div
-              class="col-4 col-lg-12 py-md-8 py-6 px-md-10 px-4 border border-3 border-primary"
+              class="col-4 col-lg-12 py-md-8 py-6 px-md-10 px-4 border border-3 border-primary d-flex justify-content-center"
             >
               <h2
                 class="m-0 yeseva-one-regular fs-md-1 fs-4 lh-115em text-center"
@@ -31,7 +58,7 @@
             </div>
 
             <div
-              class="col-8 col-lg-12 py-md-12 py-3 px-md-11 border border-3 border-primary d-flex justify-content-center"
+              class="w-100 col-lg-12 py-md-12 py-3 px-md-11 border border-3 border-primary d-flex justify-content-center"
             >
               <div
                 class="d-flex flex-lg-column justify-content-between align-items-center activity-detail-header-date"
@@ -58,6 +85,95 @@
         </section>
       </article>
     </header>
+    <!-- 活動名稱 -->
+    <article class="container">
+      <section class="activity-detail-title">
+        <h1 class="mb-md-4 mb-2 noto-tc-serif fw-bold">返老還童-制服聯誼</h1>
+        <h3 class="mb-6 noto-sans-serif fw-normal">
+          穿上制服，無年齡限制，一起走上街頭、尋找青春才有的純愛心動！
+        </h3>
+        <section class="d-none d-md-flex gap-2 mb-12">
+          <a href="#" class="activity-label">
+            <span></span>
+            <p>聯誼</p>
+          </a>
+          <a href="#" class="activity-label">
+            <span></span>
+            <p>美食</p>
+          </a>
+          <a href="#" class="activity-label">
+            <span></span>
+            <p>戶外</p>
+          </a>
+          <a href="#" class="activity-label">
+            <span></span>
+            <p>交通旅遊</p>
+          </a>
+        </section>
+      </section>
+    </article>
+    <!-- 活動內容 -->
+    <article class="container mb-md-12 mb-6">
+      <section
+        class="d-flex flex-column gap-4 p-md-8 p-4 border border-3 border-primary activity-detail-content"
+      >
+        <p>想回到過去？試著讓故事繼續？</p>
+        <p>
+          由戀愛家教「艾德溫」主辦策劃，讓各位在安排好的青春行程中擁有自然的純愛互動體驗，互相餵食餅乾、觀察對方手相，有趣的互動環節讓你/妳怦然心動！制服由主辦方提供，妝髮造型可額外加價購！
+        </p>
+        <p>
+          活動中全程會有隨行攝影師，捕捉你們的純愛互動，拍攝成實境電視劇，讓你們能留下永恆的美好回憶&lt;3
+        </p>
+      </section>
+    </article>
+    <!-- 活動購票資訊 -->
+    <article class="container">
+      <!-- 標題 -->
+      <section
+        class="d-flex justify-content-between align-items-center py-md-s21 py-4 px-md-8 px-3 mb-md-0 mb-2 border border-3 border-primary"
+      >
+        <h2 class="yeseva-one-regular fs-lg-11 fs-4">TICKET</h2>
+        <p class="m-0 noto-sans-serif fw-bold fs-lg-2 lh34">購票資訊</p>
+      </section>
+
+      <table class="mb-md-15 mb-12 w-100 activity-detail-table">
+        <thead>
+          <tr>
+            <th class="py-md-4 ps-md-2">活動日期</th>
+            <th class="py-md-4 ps-md-2">票種</th>
+            <th class="py-md-4 ps-md-2">票價</th>
+            <th class="py-md-4 ps-md-2 text-center">購票</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td class="py-md-4">2023/5/12</td>
+            <td class="py-md-4">普通票</td>
+            <td class="py-md-4">$600</td>
+            <td class="py-md-4 py-2 text-md-center text-end">
+              <button><span class="d-none d-md-inline">立即</span>購票</button>
+            </td>
+          </tr>
+          <tr>
+            <td class="py-md-4">2023/5/12</td>
+            <td class="py-md-4">改頭換面票（含大改造）</td>
+            <td class="py-md-4">$3600</td>
+            <td class="py-md-4 py-2 text-md-center text-end">
+              <button><span class="d-none d-md-inline">立即</span>購票</button>
+            </td>
+          </tr>
+          <tr>
+            <td scope="row">2023/5/12</td>
+            <td class="py-md-4">必勝票（含戀愛小抄）</td>
+            <td class="py-md-4">$8000</td>
+
+            <td class="py-md-4 py-2 text-md-center text-end">
+              <button><span class="d-none d-md-inline">立即</span>購票</button>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </article>
     <%- include('./layout/footer'); -%>
 
     <script type="module" src="../main.js"></script>

@@ -26,4 +26,82 @@
       }
     }
   }
+  &-title {
+    h1 {
+      font-size: 60px;
+      line-height: 86px;
+      letter-spacing: 0.05em;
+    }
+    h3 {
+      font-size: 22px;
+      line-height: 32px;
+    }
+    @include pad {
+      h1 {
+        font-size: 32px;
+        line-height: 45.98px;
+      }
+      h3 {
+        font-size: 16px;
+        line-height: 24px;
+      }
+    }
+  }
+  &-content {
+    p {
+      font-family: "Noto Sans TC";
+      font-size: 1rem;
+      font-weight: 400;
+      line-height: 1.5em;
+      text-align: justify;
+      margin: 0;
+    }
+  }
+  &-table {
+    table-layout: auto;
+    thead {
+      font-family: Noto Serif TC;
+      font-size: 16px;
+      font-weight: 700;
+      line-height: 22.99px;
+      border-bottom: 3px solid $primary;
+    }
+    tbody {
+      font-family: Noto Sans TC;
+      font-size: 16px;
+      font-weight: 400;
+      line-height: 23.17px;
+      tr {
+        border-bottom: 1px solid $primary;
+      }
+      button {
+        font-family: Noto Serif TC;
+        font-weight: 700;
+        line-height: 22.99px;
+        padding: 8px 24px;
+        background: $light;
+        border: 2px solid $primary;
+        transition: all ease-out 0.3s;
+        &:hover {
+          color: $secondary;
+          background: $primary;
+        }
+      }
+    }
+    @include pad {
+      thead {
+        border-bottom: 2px solid $primary;
+      }
+      tbody {
+        font-size: 14px;
+        line-height: 20.27px;
+
+        button {
+          font-size: 14px;
+          line-height: 20px;
+          padding: 8px 12px;
+        }
+      }
+    }
+  }
 }
